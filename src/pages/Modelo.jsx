@@ -304,7 +304,7 @@ export default function Modelo() {
 							</div>
 							<Button as="a" href={waHref} target="_blank" rel="noreferrer">
 								<FaWhatsapp className="text-base" />
-								Quiero una simulación
+								Contactame
 							</Button>
 						</div>
 
