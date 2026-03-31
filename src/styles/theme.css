@@ -1,0 +1,10 @@
+:root {
+  --brand-bg: 248 250 252; /* slate-50 */
+  --brand-fg: 15 23 42; /* slate-900 */
+  --brand-muted: 71 85 105; /* slate-600 */
+  --brand-card: 255 255 255;
+  --brand-border: 226 232 240; /* slate-200 */
+  --brand-primary: 18 58 122; /* azul del logo (aprox.) */
+  --brand-primary-fg: 255 255 255;
+  --brand-accent: 26 188 212; /* cian del logo (aprox.) */
+}
