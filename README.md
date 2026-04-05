@@ -18,6 +18,9 @@ npm run dev
 npm run build
 ```
 
+## Deploy en Vercel (React Router)
+Para evitar 404 al refrescar rutas como `/galeria`, el repo incluye `vercel.json` con un rewrite a `index.html`.
+
 ## Dónde editar la información
 - Datos generales / WhatsApp / ubicación / precios: `src/data/site.js`
 - Colores del tema (paleta basada en el logo): `src/styles/theme.css`
