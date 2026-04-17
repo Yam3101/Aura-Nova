@@ -157,8 +157,7 @@ export default function Home() {
 					<div className="flex flex-col items-start justify-between gap-8 lg:flex-row lg:items-end">
 						<SectionHeading
 							eyebrow="Galería"
-							title="Imágenes listas para mostrar el proyecto"
-							subtitle="Exterior, interior y amenidades. Puedes agregar o reemplazar las fotos sin tocar el diseño."
+							title="Fotos de interiores y exteriores"
 						/>
 						<Button as={Link} to="/galeria" variant="secondary">
 							Ver galería completa
@@ -198,7 +197,7 @@ export default function Home() {
 						</div>
 
 						<Card className="p-6">
-							<p className="text-sm font-semibold">Qué preguntar (ejemplo)</p>
+							<p className="text-sm font-semibold">Contactanos para:</p>
 							<ul className="mt-3 space-y-2 text-sm text-brand-muted">
 								<li>• Disponibilidad y tiempo de entrega</li>
 								<li>• Requisitos / puntos Infonavit mínimos</li>
