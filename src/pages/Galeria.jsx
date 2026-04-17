@@ -33,7 +33,11 @@ export default function Galeria() {
 		<>
 			<section className="border-b border-brand-border bg-white py-12">
 				<Container className="animate-fade-up">
-					<SectionHeading eyebrow="Galería" title="Fotos del proyecto" />
+					<SectionHeading
+						eyebrow="Galería"
+						title="Fotos del proyecto"
+						subtitle="Cambia entre exterior, interior y amenidades"
+					/>
 
 					<div className="mt-6 flex flex-wrap gap-2">
 						{tabs.map((t) => (
