@@ -186,7 +186,7 @@ export default function Modelo() {
 					<SectionHeading
 						eyebrow="Precios"
 						title="Precios por nivel"
-						subtitle="Valores que me compartiste (modifícalos cuando lo necesites)."
+						subtitle="Precio sujeto a disponibilidad y cambios.*"
 					/>
 
 					<div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">

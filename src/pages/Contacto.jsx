@@ -107,8 +107,8 @@ export default function Contacto() {
 						<Card className="p-6">
 							<p className="text-lg font-bold">Mensaje para WhatsApp</p>
 							<p className="mt-1 text-sm text-brand-muted">
-								Completa el formulario y abre WhatsApp. Puedes editar el texto
-								antes de enviarlo.
+								Completa el formulario para conocer los precios y
+								disponibilidad.
 							</p>
 
 							<form
