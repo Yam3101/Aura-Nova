@@ -3,6 +3,7 @@ import SiteLayout from "@/layout/SiteLayout.jsx";
 import Home from "@/pages/Home.jsx";
 import Modelo from "@/pages/Modelo.jsx";
 import Galeria from "@/pages/Galeria.jsx";
+import FichaTecnica from "@/pages/FichaTecnica.jsx";
 import Ubicacion from "@/pages/Ubicacion.jsx";
 import Contacto from "@/pages/Contacto.jsx";
 import NotFound from "@/pages/NotFound.jsx";
@@ -13,6 +14,7 @@ export default function App() {
       <Route element={<SiteLayout />}>
         <Route path="/" element={<Home />} />
         <Route path="/modelo" element={<Modelo />} />
+        <Route path="/ficha-tecnica" element={<FichaTecnica />} />
         <Route path="/galeria" element={<Galeria />} />
         <Route path="/ubicacion" element={<Ubicacion />} />
         <Route path="/contacto" element={<Contacto />} />
@@ -22,4 +24,3 @@ export default function App() {
     </Routes>
   );
 }
-

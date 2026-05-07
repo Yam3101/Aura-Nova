@@ -64,6 +64,12 @@ export default function Footer() {
 								Modelo y precios
 							</Link>
 							<Link
+								to="/ficha-tecnica"
+								className="text-sm text-white/70 hover:text-white"
+							>
+								Ficha técnica
+							</Link>
+							<Link
 								to="/galeria"
 								className="text-sm text-white/70 hover:text-white"
 							>

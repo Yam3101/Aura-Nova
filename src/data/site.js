@@ -11,7 +11,7 @@ export const site = {
 		advisorName: "Miguel Angel Yam Balam",
 		advisorTitle: "Asesor Inmobiliario",
 		email: "tramitesinfonavit61@gmail.com",
-		hours: "Disponibidad todos los día de la semana",
+		hours: "Disponibidad todos los días de la semana",
 	},
 	location: {
 		city: "Playa del Carmen, Q. Roo",

@@ -16,15 +16,16 @@ export default function Navbar() {
 	const [open, setOpen] = useState(false);
 	const location = useLocation();
 
-	const items = useMemo(
-		() => [
-			{ to: "/modelo", label: "Modelo" },
-			{ to: "/galeria", label: "Galería" },
-			{ to: "/ubicacion", label: "Ubicación" },
-			{ to: "/contacto", label: "Contacto" },
-		],
-		[],
-	);
+  const items = useMemo(
+    () => [
+      { to: "/modelo", label: "Modelo" },
+      { to: "/ficha-tecnica", label: "Ficha técnica" },
+      { to: "/galeria", label: "Galería" },
+      { to: "/ubicacion", label: "Ubicación" },
+      { to: "/contacto", label: "Contacto" },
+    ],
+    [],
+  );
 
 	const waHref = buildWhatsAppUrl(
 		site.whatsapp.phoneE164,
