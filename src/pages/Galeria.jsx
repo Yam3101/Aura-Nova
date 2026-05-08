@@ -36,7 +36,7 @@ export default function Galeria() {
 					<SectionHeading
 						eyebrow="Galería"
 						title="Fotos del proyecto"
-						subtitle="Cambia entre exterior, interior y amenidades"
+						subtitle="Cambia entre exterior, interior y amenidades. Las imagenes son ilustrativas y pueden no representar el producto final.*"
 					/>
 
 					<div className="mt-6 flex flex-wrap gap-2">
