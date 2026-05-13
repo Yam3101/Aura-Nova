@@ -254,7 +254,7 @@ export default function Modelo() {
 					<div className="grid gap-10 lg:grid-cols-2">
 						<div className="space-y-4">
 							<SectionHeading
-								eyebrow="Compra con Infonavit"
+								eyebrow="Compra con Infonavit, Fovissste y Crédito bancario"
 								title="Proceso de asesoría"
 								subtitle="Te acompañamos en tu proceso de compra con nuestro asesor, que te guiará en todo el proceso."
 							/>
