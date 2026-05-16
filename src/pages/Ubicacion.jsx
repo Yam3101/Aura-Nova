@@ -16,18 +16,25 @@ export default function Ubicacion() {
 
   return (
     <>
-      <section className="border-b border-brand-border bg-white py-12">
+      <section
+        className="border-b border-brand-border bg-white py-12"
+        aria-labelledby="ubicacion-title"
+      >
         <Container className="animate-fade-up">
           <SectionHeading
             eyebrow="Ubicación"
+            id="ubicacion-title"
             title="Encuéntranos y agenda una visita"
             subtitle={site.location.addressLine}
           />
         </Container>
       </section>
 
-      <section className="py-14">
+      <section className="py-14" aria-labelledby="ubicacion-contenido-title">
         <Container>
+          <h2 id="ubicacion-contenido-title" className="sr-only">
+            Ubicación y mapa
+          </h2>
           <div className="grid gap-6 lg:grid-cols-2">
             <Card className="overflow-hidden p-0">
               <div className="aspect-[16/10] w-full bg-slate-100">
@@ -46,6 +53,17 @@ export default function Ubicacion() {
 
             <div className="space-y-4">
               <Card>
+                <p className="text-sm font-semibold">
+                  ¿Por qué invertir en Playa del Carmen?
+                </p>
+                <p className="mt-2 text-sm text-brand-muted">
+                  Playa del Carmen, Quintana Roo (Riviera Maya) es una zona con alta
+                  demanda, crecimiento y conectividad. Vivir aquí te acerca a servicios,
+                  comercios y acceso a la playa, lo que la convierte en una excelente
+                  opción para hogar o inversión.
+                </p>
+              </Card>
+              <Card>
                 <div className="flex items-start gap-3">
                   <div className="grid h-10 w-10 place-items-center rounded-xl bg-brand-primary/10 text-brand-primary">
                     <FiMapPin />
@@ -61,7 +79,7 @@ export default function Ubicacion() {
                         as="a"
                         href={site.location.mapLinkUrl}
                         target="_blank"
-                        rel="noreferrer"
+                        rel="noopener noreferrer"
                         variant="secondary"
                       >
                         Abrir en Google Maps
@@ -118,3 +136,4 @@ export default function Ubicacion() {
     </>
   );
 }
+// SEO: Se añadieron ids/aria-labelledby y copy con keywords de ubicación (Playa del Carmen, Q. Roo, Riviera Maya).

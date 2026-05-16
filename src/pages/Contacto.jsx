@@ -32,17 +32,24 @@ export default function Contacto() {
 
 	return (
 		<>
-			<section className="border-b border-brand-border bg-white py-12">
+			<section
+				className="border-b border-brand-border bg-white py-12"
+				aria-labelledby="contacto-title"
+			>
 				<Container className="animate-fade-up">
 					<SectionHeading
 						eyebrow="Contacto"
+						id="contacto-title"
 						title="Escríbenos y te compartimos disponibilidad"
 					/>
 				</Container>
 			</section>
 
-			<section className="py-14">
+			<section className="py-14" aria-labelledby="contacto-contenido-title">
 				<Container>
+					<h2 id="contacto-contenido-title" className="sr-only">
+						Contacto y formulario
+					</h2>
 					<div className="grid gap-6 lg:grid-cols-2">
 						<div className="space-y-4">
 							<Card>
@@ -63,7 +70,8 @@ export default function Contacto() {
 												as="a"
 												href={waHref}
 												target="_blank"
-												rel="noreferrer"
+												rel="noopener noreferrer"
+												aria-label="Contactar por WhatsApp"
 											>
 												Abrir WhatsApp
 											</Button>
@@ -175,3 +183,4 @@ export default function Contacto() {
 		</>
 	);
 }
+// SEO: Se agregaron ids/aria-labelledby y mejoras de accesibilidad en CTA de WhatsApp.

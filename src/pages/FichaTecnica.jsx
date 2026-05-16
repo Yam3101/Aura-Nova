@@ -35,12 +35,18 @@ export default function FichaTecnica() {
 
 	return (
 		<>
-			<section className="border-b border-brand-border bg-white py-12">
+			<section
+				className="border-b border-brand-border bg-white py-12"
+				aria-labelledby="ficha-title"
+			>
 				<Container className="animate-fade-up">
 					<Badge>Ficha técnica</Badge>
-					<h1 className="mt-3 text-3xl font-extrabold tracking-tight sm:text-4xl">
+					<h2
+						id="ficha-title"
+						className="mt-3 text-3xl font-extrabold tracking-tight sm:text-4xl"
+					>
 						{fichaTecnica.header.title}
-					</h1>
+					</h2>
 					<p className="mt-2 text-sm text-brand-muted sm:text-base">
 						{fichaTecnica.header.subtitle}
 					</p>
@@ -58,9 +64,10 @@ export default function FichaTecnica() {
 				</Container>
 			</section>
 
-			<section className="py-14">
+			<section className="py-14" aria-labelledby="ficha-generales-title">
 				<Container>
 					<SectionHeading
+						id="ficha-generales-title"
 						eyebrow="Resumen"
 						title="Datos generales del desarrollo"
 						subtitle="Información técnica resumida para que el cliente entienda rápido."
@@ -79,12 +86,16 @@ export default function FichaTecnica() {
 				</Container>
 			</section>
 
-			<section className="border-y border-brand-border bg-white py-14">
+			<section
+				className="border-y border-brand-border bg-white py-14"
+				aria-labelledby="ficha-distribucion-title"
+			>
 				<Container>
 					<div className="grid gap-10 lg:grid-cols-2 lg:items-start">
 						<div>
 							<SectionHeading
 								eyebrow="Distribución"
+								id="ficha-distribucion-title"
 								title="Distribución de la vivienda T1660"
 								subtitle="Componentes principales de la vivienda."
 							/>
@@ -130,9 +141,10 @@ export default function FichaTecnica() {
 				</Container>
 			</section>
 
-			<section className="py-14">
+			<section className="py-14" aria-labelledby="ficha-construccion-title">
 				<Container>
 					<SectionHeading
+						id="ficha-construccion-title"
 						eyebrow="Construcción"
 						title="Estructura y construcción"
 						subtitle="Materiales y especificaciones principales."
@@ -178,10 +190,12 @@ export default function FichaTecnica() {
 			<section
 				id="amenidades"
 				className="border-t border-brand-border bg-white py-14"
+				aria-labelledby="ficha-amenidades-title"
 			>
 				<Container>
 					<SectionHeading
 						eyebrow="Amenidades"
+						id="ficha-amenidades-title"
 						title="Amenidades del desarrollo"
 						subtitle="Resumen técnico y fácil de entender para el cliente."
 					/>
@@ -237,3 +251,4 @@ export default function FichaTecnica() {
 		</>
 	);
 }
+// SEO: Se eliminó h1 (para mantener h1 único en Home) y se añadieron aria-labelledby + ids en encabezados de secciones.

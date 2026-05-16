@@ -40,11 +40,16 @@ export default function Home() {
 
 	return (
 		<>
-			<section className="relative overflow-hidden border-b border-brand-border bg-white">
+			<section
+				className="relative overflow-hidden border-b border-brand-border bg-white"
+				aria-labelledby="home-hero-title"
+			>
 				<div className="absolute inset-0">
 					<img
 						src="/media/exterior/render-zona-1.jpg"
-						alt=""
+						alt="Render del residencial Aura Nova Hogar en Playa del Carmen"
+						loading="eager"
+						fetchpriority="high"
 						className="h-full w-full object-cover"
 					/>
 					<div className="absolute inset-0 bg-gradient-to-r from-white via-white/80 to-white/20" />
@@ -53,15 +58,28 @@ export default function Home() {
 				<Container className="relative py-14 sm:py-20">
 					<div className="max-w-2xl animate-fade-up">
 						<Badge>Compra con Infonavit</Badge>
-						<h1 className="mt-4 text-3xl font-extrabold tracking-tight sm:text-5xl">
-							Vive en {site.location.city} con un modelo de vivienda pensado
-							para tu día a día
+						<h1
+							id="home-hero-title"
+							className="mt-4 text-3xl font-extrabold tracking-tight sm:text-5xl"
+						>
+							Departamentos en venta en Playa del Carmen
 						</h1>
 						<p className="mt-4 text-base text-brand-muted sm:text-lg">
-							Prototipo {vivienda.prototipo} ·{" "}
-							{vivienda.superficieConstruccionM2} m² de construcción · 2
-							recámaras · baño completo. Incluye galería, precios por nivel y
-							contacto directo por WhatsApp.
+							Aura Nova Hogar: departamentos residenciales en Quintana Roo
+							(Riviera Maya) con{" "}
+							<span className="font-semibold text-brand-fg">
+								crédito Infonavit
+							</span>
+							,{" "}
+							<span className="font-semibold text-brand-fg">
+								crédito Fovissste
+							</span>{" "}
+							y{" "}
+							<span className="font-semibold text-brand-fg">
+								financiamiento hipotecario
+							</span>
+							. Prototipo {vivienda.prototipo} ·{" "}
+							{vivienda.superficieConstruccionM2} m² · 2 recámaras.
 						</p>
 
 						<div className="mt-7 flex flex-col gap-3 sm:flex-row">
@@ -105,8 +123,14 @@ export default function Home() {
 				</Container>
 			</section>
 
-			<section className="py-14">
+			<section className="py-14" aria-labelledby="home-esencial-title">
 				<Container>
+					<SectionHeading
+						id="home-esencial-title"
+						eyebrow="Lo esencial"
+						title="Vivienda nueva en Playa del Carmen con asesoría completa"
+						subtitle="Te ayudamos a cotizar y avanzar en tu compra con crédito Infonavit, Fovissste o financiamiento hipotecario."
+					/>
 					<div className="mt-8 grid gap-4 md:grid-cols-3">
 						<Card>
 							<div className="flex items-start gap-3">
@@ -152,12 +176,17 @@ export default function Home() {
 				</Container>
 			</section>
 
-			<section className="border-y border-brand-border bg-white py-14">
+			<section
+				className="border-y border-brand-border bg-white py-14"
+				aria-labelledby="home-galeria-title"
+			>
 				<Container>
 					<div className="flex flex-col items-start justify-between gap-8 lg:flex-row lg:items-end">
 						<SectionHeading
 							eyebrow="Galería"
-							title="Fotos de interiores y exteriores"
+							id="home-galeria-title"
+							title="Fotos de interiores, exteriores y amenidades"
+							subtitle="Explora el desarrollo Aura Nova Hogar y conoce cómo se vive en Playa del Carmen, Quintana Roo."
 						/>
 						<Button as={Link} to="/galeria" variant="secondary">
 							Ver galería completa
@@ -176,12 +205,13 @@ export default function Home() {
 				</Container>
 			</section>
 
-			<section className="py-14">
+			<section className="py-14" aria-labelledby="home-contacto-title">
 				<Container>
 					<div className="grid gap-6 lg:grid-cols-2">
 						<div className="space-y-4">
 							<SectionHeading
 								eyebrow="Contacto rápido"
+								id="home-contacto-title"
 								title="Agenda visita y recibe la información al instante"
 								subtitle="Al enviar WhatsApp puedes pedir: disponibilidad, requisitos, simulación y citas para ver la vivienda."
 							/>
@@ -224,3 +254,4 @@ export default function Home() {
 		</>
 	);
 }
+// SEO: Se añadió h1 único con keyword principal, aria-labelledby en secciones y copy con keywords objetivo.

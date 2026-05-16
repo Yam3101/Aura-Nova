@@ -70,6 +70,12 @@ export default function Footer() {
 								Ficha técnica
 							</Link>
 							<Link
+								to="/amenidades"
+								className="text-sm text-white/70 hover:text-white"
+							>
+								Amenidades
+							</Link>
+							<Link
 								to="/galeria"
 								className="text-sm text-white/70 hover:text-white"
 							>

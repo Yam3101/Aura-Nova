@@ -36,17 +36,23 @@ export default function Modelo() {
 
 	return (
 		<>
-			<section className="border-b border-brand-border bg-white py-12">
+			<section
+				className="border-b border-brand-border bg-white py-12"
+				aria-labelledby="modelo-title"
+			>
 				<Container>
 					<div className="grid gap-8 lg:grid-cols-2 lg:items-center">
 						<div className="space-y-4 animate-fade-up">
 							<Badge>Un solo modelo · lista para vender</Badge>
-							<h1 className="text-3xl font-extrabold tracking-tight sm:text-4xl">
+							<h2
+								id="modelo-title"
+								className="text-3xl font-extrabold tracking-tight sm:text-4xl"
+							>
 								MODELO AURA MAR <br />
 								<span className="text-lg">
 									{vivienda.tipo} · Prototipo {vivienda.prototipo}
 								</span>
-							</h1>
+							</h2>
 							<p className="text-sm text-brand-muted sm:text-base">
 								{vivienda.niveles} plantas con {vivienda.viviendasPorNivel}{" "}
 								viviendas por nivel. Superficie de construcción:{" "}
@@ -115,8 +121,14 @@ export default function Modelo() {
 				</Container>
 			</section>
 
-			<section className="py-14">
+			<section className="py-14" aria-labelledby="modelo-resumen-title">
 				<Container>
+					<SectionHeading
+						id="modelo-resumen-title"
+						eyebrow="Modelo"
+						title="Departamento modelo en Aura Nova Hogar"
+						subtitle="Resumen del prototipo T1660 para compra con crédito Infonavit, Fovissste o financiamiento hipotecario."
+					/>
 					<div className="grid gap-4 md:grid-cols-3">
 						<Card>
 							<div className="flex items-start gap-3">
@@ -181,12 +193,14 @@ export default function Modelo() {
 			<section
 				id="precios"
 				className="border-y border-brand-border bg-white py-14"
+				aria-labelledby="modelo-precios-title"
 			>
 				<Container>
 					<SectionHeading
 						eyebrow="Precios"
+						id="modelo-precios-title"
 						title="Precios por nivel"
-						subtitle="Precio sujeto a disponibilidad y cambios.*"
+						subtitle="Acepta crédito Infonavit, crédito Fovissste y financiamiento hipotecario. Precio sujeto a disponibilidad y cambios.*"
 					/>
 
 					<div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
@@ -207,12 +221,13 @@ export default function Modelo() {
 				</Container>
 			</section>
 
-			<section className="py-14">
+			<section className="py-14" aria-labelledby="modelo-amenidades-title">
 				<Container>
 					<div className="mb-10 grid gap-8 lg:grid-cols-2 lg:items-start">
 						<div className="space-y-4">
 							<SectionHeading
 								eyebrow="Amenidades"
+								id="modelo-amenidades-title"
 								title="Áreas recreativas del desarrollo"
 								subtitle={notas.medidasPuedenVariar}
 							/>
@@ -236,6 +251,7 @@ export default function Modelo() {
 						<div className="space-y-4">
 							<SectionHeading
 								eyebrow="Fotos"
+								as="h3"
 								title="Amenidades en imágenes"
 								subtitle="Haz clic para ver en grande."
 							/>
@@ -255,6 +271,7 @@ export default function Modelo() {
 						<div className="space-y-4">
 							<SectionHeading
 								eyebrow="Compra con Infonavit, Fovissste y Crédito bancario"
+								as="h3"
 								title="Proceso de asesoría"
 								subtitle="Te acompañamos en tu proceso de compra con nuestro asesor, que te guiará en todo el proceso."
 							/>
@@ -311,6 +328,7 @@ export default function Modelo() {
 						<div className="space-y-4">
 							<SectionHeading
 								eyebrow="Galería interior"
+								as="h3"
 								title="Conoce la vivienda por dentro"
 								subtitle="Haz clic en cualquier imagen para verla en grande y navegar."
 							/>
@@ -343,3 +361,4 @@ export default function Modelo() {
 		</>
 	);
 }
+// SEO: Se ajustó jerarquía (sin h1 fuera del Home), y se añadieron aria-labelledby + h2/h3 semánticos.

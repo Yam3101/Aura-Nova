@@ -31,10 +31,14 @@ export default function Galeria() {
 
 	return (
 		<>
-			<section className="border-b border-brand-border bg-white py-12">
+			<section
+				className="border-b border-brand-border bg-white py-12"
+				aria-labelledby="galeria-title"
+			>
 				<Container className="animate-fade-up">
 					<SectionHeading
 						eyebrow="Galería"
+						id="galeria-title"
 						title="Fotos del proyecto"
 						subtitle="Cambia entre exterior, interior y amenidades. Las imagenes son ilustrativas y pueden no representar el producto final.*"
 					/>
@@ -59,8 +63,11 @@ export default function Galeria() {
 				</Container>
 			</section>
 
-			<section className="py-14">
+			<section className="py-14" aria-labelledby="galeria-grid-title">
 				<Container>
+					<h2 id="galeria-grid-title" className="sr-only">
+						Galería de imágenes
+					</h2>
 					<GalleryGrid
 						items={items}
 						onSelect={(idx) => {
@@ -82,3 +89,4 @@ export default function Galeria() {
 		</>
 	);
 }
+// SEO: Se añadieron ids/aria-labelledby para semántica de secciones y mejor rastreo por Google.

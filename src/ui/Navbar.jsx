@@ -20,6 +20,7 @@ export default function Navbar() {
     () => [
       { to: "/modelo", label: "Modelo" },
       { to: "/ficha-tecnica", label: "Ficha técnica" },
+      { to: "/amenidades", label: "Amenidades" },
       { to: "/galeria", label: "Galería" },
       { to: "/ubicacion", label: "Ubicación" },
       { to: "/contacto", label: "Contacto" },
@@ -44,12 +45,15 @@ export default function Navbar() {
 					</div>
 				</div>
 
-				<nav className="hidden items-center gap-1 md:flex">
-					{items.map((it) => (
-						<NavLink
-							key={it.to}
-							to={it.to}
-							className={({ isActive }) =>
+        <nav
+          className="hidden items-center gap-1 md:flex"
+          aria-label="Navegación principal"
+        >
+          {items.map((it) => (
+            <NavLink
+              key={it.to}
+              to={it.to}
+              className={({ isActive }) =>
 								`${navLinkBase} ${isActive ? navLinkActive : ""}`
 							}
 						>
@@ -97,14 +101,14 @@ export default function Navbar() {
 				</div>
 			</Container>
 
-			{open && (
-				<div className="border-t border-brand-border bg-white md:hidden">
-					<Container className="py-3">
-						<div className="grid gap-2">
-							{items.map((it) => (
-								<Link
-									key={it.to}
-									to={it.to}
+      {open && (
+        <div className="border-t border-brand-border bg-white md:hidden">
+          <Container className="py-3">
+            <nav className="grid gap-2" aria-label="Navegación principal">
+              {items.map((it) => (
+                <Link
+                  key={it.to}
+                  to={it.to}
 									onClick={() => setOpen(false)}
 									className={`rounded-xl px-3 py-2 text-sm font-semibold ${
 										location.pathname === it.to
@@ -112,11 +116,11 @@ export default function Navbar() {
 											: "text-brand-muted hover:bg-slate-50 hover:text-brand-fg"
 									}`}
 								>
-									{it.label}
-								</Link>
-							))}
-							<Button
-								as="a"
+                  {it.label}
+                </Link>
+              ))}
+              <Button
+                as="a"
 								href={tour3dHref}
 								target="_blank"
 								rel="noreferrer"
@@ -124,24 +128,25 @@ export default function Navbar() {
 								className="w-full"
 							>
 								<FiBox className="text-base" />
-								Ver Tour 3D
-							</Button>
-							<Button
-								as="a"
-								href={waHref}
-								target="_blank"
-								rel="noreferrer"
-								onClick={() => setOpen(false)}
-								className="w-full"
-								variant="secondary"
-							>
-								<FaWhatsapp className="text-base" />
-								Escribir por WhatsApp
-							</Button>
-						</div>
-					</Container>
-				</div>
-			)}
-		</header>
-	);
+                Ver Tour 3D
+              </Button>
+              <Button
+                as="a"
+                href={waHref}
+                target="_blank"
+                rel="noreferrer"
+                onClick={() => setOpen(false)}
+                className="w-full"
+                variant="secondary"
+              >
+                <FaWhatsapp className="text-base" />
+                Escribir por WhatsApp
+              </Button>
+            </nav>
+          </Container>
+        </div>
+      )}
+    </header>
+  );
 }
+// SEO: Se añadió aria-label en <nav> para mejorar semántica y accesibilidad.

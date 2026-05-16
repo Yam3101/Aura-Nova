@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://auranovahogar.com/sitemap.xml
+# SEO: Robots.txt permite indexación y referencia el sitemap del dominio.
+
