@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { FiMapPin, FiMail, FiPhone } from "react-icons/fi";
+import { FiMapPin, FiMail, FiFacebook } from "react-icons/fi";
 import { FaWhatsapp } from "react-icons/fa6";
 import Container from "@/ui/Container.jsx";
 import Logo from "@/ui/Logo.jsx";
@@ -48,10 +48,17 @@ export default function Footer() {
 							<FiMail />
 							{site.contact.email}
 						</a>
-						<p className="flex items-center gap-2 text-sm text-white/70">
-							<FiPhone />
-							{site.contact.hours}
-						</p>
+						<a
+							href="https://www.facebook.com/people/Ejecutivo-Inmobiliario-Miguel-Yam/61553296772830/"
+							target="_blank"
+							rel="noreferrer"
+							className="flex items-center gap-2 text-sm text-white/70 hover:text-white"
+						>
+							<p className="flex items-center gap-2 text-sm text-white/70 hover:text-white">
+								<FiFacebook />
+								Nuestra página en Facebook
+							</p>
+						</a>
 					</div>
 
 					<div className="space-y-3">
@@ -101,7 +108,7 @@ export default function Footer() {
 
 				<div className="mt-10 flex flex-col items-start justify-between gap-3 border-t border-slate-800 pt-6 text-xs text-white/60 sm:flex-row sm:items-center">
 					<p>
-						© {new Date().getFullYear()} {site.name}. Todos los derechos
+						© {new Date().getFullYear()} {site.name}. M. Yam Todos los derechos
 						reservados.
 					</p>
 					<p>Hecho con React + Tailwind.</p>
