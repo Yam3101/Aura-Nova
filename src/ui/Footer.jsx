@@ -108,7 +108,7 @@ export default function Footer() {
 
 				<div className="mt-10 flex flex-col items-start justify-between gap-3 border-t border-slate-800 pt-6 text-xs text-white/60 sm:flex-row sm:items-center">
 					<p>
-						© {new Date().getFullYear()} {site.name}. M. Yam Todos los derechos
+						© {new Date().getFullYear()} {site.name}. MYAM Todos los derechos
 						reservados.
 					</p>
 					<p>Hecho con React + Tailwind.</p>
