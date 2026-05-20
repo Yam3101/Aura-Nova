@@ -76,7 +76,7 @@ export default function Home() {
 							</span>{" "}
 							y{" "}
 							<span className="font-semibold text-brand-fg">
-								financiamiento hipotecario
+								financiamiento bancario
 							</span>
 							. Prototipo {vivienda.prototipo} ·{" "}
 							{vivienda.superficieConstruccionM2} m² · 2 recámaras.
