@@ -63,7 +63,7 @@ export default function Galeria() {
 				</Container>
 			</section>
 
-			<section className="py-14" aria-labelledby="galeria-grid-title">
+			<section aria-labelledby="galeria-grid-title">
 				<Container>
 					<h2 id="galeria-grid-title" className="sr-only">
 						Galería de imágenes

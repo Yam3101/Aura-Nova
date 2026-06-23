@@ -2,33 +2,29 @@ export const media = {
 	exterior: [
 		{
 			src: "/media/exterior/casa-exterior-foto.jpg",
-			alt: "Vista desde el exterior (Imagen real del lugar, no render)",
-		},
-		{
-			src: "/media/exterior/render-zona-general.jpg",
-			alt: "Vista superior de la zona (Imagen real del lugar, no render)",
-		},
-		{
-			src: "/media/exterior/render-zona-general-2.jpg",
-			alt: "Vista superior de la zona (Imagen real del lugar, no render)",
-		},
-		{
-			src: "/media/exterior/casa-exterior-foto-2.jpg",
-			alt: "Vista desde el exterior (Imagen real del lugar, no render)",
-		},
-		{ src: "/media/exterior/render-zona-1.jpg", alt: "Cancha deportiva" },
-
-		{
-			src: "/media/exterior/render-zona-2.jpg",
-			alt: "Cancha deportiva (vista superior)",
-		},
-		{
-			src: "/media/exterior/casa-exterior-1.jpg",
 			alt: "Vista desde el exterior",
 		},
 		{
-			src: "/media/exterior/estacionamiento-1.jpg",
-			alt: "Área de estacionamiento",
+			src: "/media/exterior/casa-exterior-2.jpg",
+			alt: "Vista desde el exterior",
+		},
+		{
+			src: "/media/exterior/casa-exterior-foto-3.jpg",
+			alt: "Vista desde el exterior",
+		},
+		{
+			src: "/media/exterior/casa-exterior-foto-4.jpg",
+			alt: "Vista desde el exterior",
+		},
+		{ src: "/media/exterior/pasillo-1.jpg", alt: "Pasillo" },
+		{ src: "/media/exterior/pasillo-2.jpg", alt: "Pasillo" },
+		{
+			src: "/media/exterior/render-zona-general-2.jpg",
+			alt: "Vista superior de la zona",
+		},
+		{
+			src: "/media/exterior/casa-exterior-foto-2.jpg",
+			alt: "Vista desde el exterior",
 		},
 	],
 	interior: [
@@ -47,35 +43,35 @@ export const media = {
 	amenidades: [
 		{
 			src: "/media/amenidades/alberca-vista-superior.jpg",
-			alt: "Zona de alberca (Imagen real del lugar, no render)",
+			alt: "Zona de alberca",
 		},
 		{
 			src: "/media/amenidades/alberca-3.jpg",
-			alt: "Alberca (Imagen real del lugar, no render)",
+			alt: "Alberca",
 		},
 		{
 			src: "/media/amenidades/alberca-5.jpg",
-			alt: "Alberca (Imagen real del lugar, no render)",
+			alt: "Alberca",
 		},
 		{
 			src: "/media/amenidades/alberca-4.jpg",
-			alt: "Alberca (Imagen real del lugar, no render)",
+			alt: "Alberca",
 		},
 		{
 			src: "/media/amenidades/palapa.jpg",
-			alt: "Palapa (Imagen real del lugar, no render)",
+			alt: "Palapa",
 		},
 		{
 			src: "/media/amenidades/cancha-superior.jpg",
-			alt: "Cancha, vista superior (Imagen real del lugar, no render)",
+			alt: "Cancha, vista superior",
 		},
 		{
 			src: "/media/amenidades/area-juegos-1.jpg",
-			alt: "Área de juegos (Imagen real del lugar, no render)",
+			alt: "Área de juegos",
 		},
 		{
 			src: "/media/amenidades/area-juegos-2.jpg",
-			alt: "Área de juegos (Imagen real del lugar, no render)",
+			alt: "Área de juegos",
 		},
 		{ src: "/media/amenidades/alberca-1.jpg", alt: "Alberca" },
 		{ src: "/media/amenidades/alberca-2.jpg", alt: "Alberca" },
