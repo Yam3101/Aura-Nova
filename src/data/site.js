@@ -9,7 +9,7 @@ export const site = {
 	},
 	contact: {
 		advisorName: "Miguel Angel Yam Balam",
-		advisorTitle: "Ejecutivo Inmobiliario",
+		advisorTitle: "Asesor Certificado",
 		email: "tramitesinfonavit61@gmail.com",
 		hours: "Disponibidad todos los días de la semana",
 	},
