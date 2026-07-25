@@ -2,6 +2,7 @@ import {
 	FiBox,
 	FiCheckCircle,
 	FiClipboard,
+	FiDroplet,
 	FiHome,
 	FiLayers,
 	FiShield,
@@ -14,7 +15,7 @@ import Card from "@/ui/Card.jsx";
 import Badge from "@/ui/Badge.jsx";
 import Button from "@/ui/Button.jsx";
 import useDocumentTitle from "@/hooks/useDocumentTitle.js";
-import { fichaTecnica } from "@/data/fichaTecnica.js";
+import { fichaTecnica, tanqueAgua } from "@/data/fichaTecnica.js";
 import { site } from "@/data/site.js";
 import { buildWhatsAppUrl } from "@/utils/whatsapp.js";
 
@@ -224,6 +225,42 @@ export default function FichaTecnica() {
 								</ul>
 							</Card>
 						))}
+					</div>
+
+					<div className="mt-8 rounded-2xl border border-brand-border bg-brand-primary/5 p-6">
+						<div className="flex flex-col gap-6 lg:flex-row lg:items-start lg:justify-between">
+							<div className="max-w-2xl">
+								<div className="flex items-center gap-3">
+									<span className="grid h-10 w-10 place-items-center rounded-xl bg-brand-primary/10 text-brand-primary">
+										<FiDroplet />
+									</span>
+									<div>
+										<p className="text-sm font-semibold">{tanqueAgua.title}</p>
+										<p className="text-xs text-brand-muted">{tanqueAgua.subtitle}</p>
+									</div>
+								</div>
+								<p className="mt-4 text-sm text-brand-muted">{tanqueAgua.summary}</p>
+							</div>
+
+							<div className="grid w-full gap-3 sm:grid-cols-2 lg:max-w-md">
+								<div className="rounded-2xl border border-brand-border bg-white p-4">
+									<p className="text-xs font-semibold text-brand-muted">
+										Volumen nominal
+									</p>
+									<p className="mt-1 text-xl font-extrabold">
+										{tanqueAgua.capacityM3.toLocaleString("es-MX")} m³
+									</p>
+								</div>
+								<div className="rounded-2xl border border-brand-border bg-white p-4">
+									<p className="text-xs font-semibold text-brand-muted">
+										Capacidad máxima
+									</p>
+									<p className="mt-1 text-xl font-extrabold">
+										{tanqueAgua.capacityLabel}
+									</p>
+								</div>
+							</div>
+						</div>
 					</div>
 
 					<div className="mt-10 flex flex-col items-start justify-between gap-4 rounded-3xl border border-brand-border bg-white p-6 shadow-soft sm:flex-row sm:items-center">
