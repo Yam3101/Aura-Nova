@@ -127,7 +127,7 @@ export default function Modelo() {
 						id="modelo-resumen-title"
 						eyebrow="Modelo"
 						title="Departamento modelo en Aura Nova Hogar"
-						subtitle="Resumen del prototipo T1660 para compra con crédito Infonavit, Fovissste o financiamiento hipotecario."
+						subtitle="Resumen del prototipo T1660 para compra con crédito Infonavit, Fovissste o financiamiento bancario."
 					/>
 					<div className="grid gap-4 md:grid-cols-3">
 						<Card>
