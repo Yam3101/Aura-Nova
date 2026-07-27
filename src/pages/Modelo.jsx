@@ -200,7 +200,7 @@ export default function Modelo() {
 						eyebrow="Precios"
 						id="modelo-precios-title"
 						title="Precios por nivel"
-						subtitle="Acepta crédito Infonavit, crédito Fovissste y financiamiento hipotecario. Precio sujeto a disponibilidad y cambios.*"
+						subtitle="Acepta crédito Infonavit, crédito Fovissste y financiamiento bancario. Precio sujeto a disponibilidad y cambios.*"
 					/>
 
 					<div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
