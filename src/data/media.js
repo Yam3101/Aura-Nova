@@ -73,7 +73,6 @@ export const media = {
 			src: "/media/amenidades/area-juegos-2.jpg",
 			alt: "Área de juegos",
 		},
-		{ src: "/media/amenidades/alberca-1.jpg", alt: "Alberca" },
 		{ src: "/media/amenidades/alberca-2.jpg", alt: "Alberca" },
 		{ src: "/media/amenidades/cancha-alberca-1.jpg", alt: "Cancha y alberca" },
 		{
