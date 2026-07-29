@@ -43,7 +43,6 @@ export default function Modelo() {
 				<Container>
 					<div className="grid gap-8 lg:grid-cols-2 lg:items-center">
 						<div className="space-y-4 animate-fade-up">
-							<Badge>Un solo modelo · lista para vender</Badge>
 							<h2
 								id="modelo-title"
 								className="text-3xl font-extrabold tracking-tight sm:text-4xl"
@@ -112,7 +111,7 @@ export default function Modelo() {
 
 						<div className="overflow-hidden rounded-3xl border border-brand-border bg-slate-100 shadow-soft">
 							<img
-								src="/media/exterior/casa-exterior-1.jpg"
+								src="/media/exterior/casa-exterior-2.jpg"
 								alt="Fachada exterior"
 								className="h-full w-full object-cover"
 							/>
