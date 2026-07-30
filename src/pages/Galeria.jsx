@@ -40,7 +40,7 @@ export default function Galeria() {
 						eyebrow="Galería"
 						id="galeria-title"
 						title="Fotos del proyecto"
-						subtitle="Cambia entre exterior, interior y amenidades. Las imagenes son ilustrativas y pueden no representar el producto final. Las fotos de interior son solo demostrativas, la vivienda no cuenta con muebles*"
+						subtitle="Cambia entre exterior, interior y amenidades. Fotos del interior de casa muestra, la vivienda no cuenta con muebles."
 					/>
 
 					<div className="mt-6 flex flex-wrap gap-2">
