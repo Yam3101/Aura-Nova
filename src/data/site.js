@@ -27,8 +27,8 @@ export const site = {
 };
 
 export const prices = [
-	{ label: "3er nivel", valueMXN: 1061000 },
-	{ label: "2do nivel", valueMXN: 1111000 },
-	{ label: "1er nivel", valueMXN: 1161000 },
-	{ label: "Planta baja", valueMXN: 1211000 },
+	{ label: "3er nivel", valueMXN: 1075500 },
+	{ label: "2do nivel", valueMXN: 1125000 },
+	{ label: "1er nivel", valueMXN: 1175000 },
+	{ label: "Planta baja", valueMXN: 1225000 },
 ];
