@@ -18,13 +18,10 @@ export const media = {
 		},
 		{ src: "/media/exterior/pasillo-1.jpg", alt: "Pasillo" },
 		{ src: "/media/exterior/pasillo-2.jpg", alt: "Pasillo" },
+		{ src: "/media/exterior/pasillo-3.jpg", alt: "Pasillo" },
 		{
 			src: "/media/exterior/render-zona-general-2.jpg",
 			alt: "Vista superior de la zona",
-		},
-		{
-			src: "/media/exterior/casa-exterior-foto-2.jpg",
-			alt: "Vista desde el exterior",
 		},
 	],
 	interior: [
@@ -36,13 +33,24 @@ export const media = {
 		{ src: "/media/interior/comedor-3.jpg", alt: "Comedor" },
 		{ src: "/media/interior/recamara-1.jpg", alt: "Recámara principal" },
 		{ src: "/media/interior/recamara-2.jpg", alt: "Recámara secundaria" },
+		{ src: "/media/interior/recamara-3.jpg", alt: "Recámara secundaria" },
+		{
+			src: "/media/interior/recamara-5.jpg",
+			alt: "Recámara de la sala de estar",
+		},
 		{ src: "/media/interior/bano-1.jpg", alt: "Baño" },
+		{ src: "/media/interior/bano-2.jpg", alt: "Baño" },
 	],
 	amenidades: [
 		{
 			src: "/media/amenidades/alberca-vista-superior.jpg",
 			alt: "Zona de alberca",
 		},
+		{
+			src: "/media/amenidades/alberca-1.jpg",
+			alt: "Alberca",
+		},
+
 		{
 			src: "/media/amenidades/alberca-3.jpg",
 			alt: "Alberca",
@@ -56,7 +64,15 @@ export const media = {
 			alt: "Alberca",
 		},
 		{
+			src: "/media/amenidades/baños y regaderas.jpg",
+			alt: "Baños y regaderas",
+		},
+		{
 			src: "/media/amenidades/palapa.jpg",
+			alt: "Palapa",
+		},
+		{
+			src: "/media/amenidades/palapa-2.jpg",
 			alt: "Palapa",
 		},
 		{
