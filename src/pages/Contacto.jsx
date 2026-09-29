@@ -180,6 +180,112 @@ export default function Contacto() {
 					</div>
 				</Container>
 			</section>
+			<section
+				className="border-t border-brand-border bg-white py-16"
+				aria-labelledby="filosofia-title"
+			>
+				<Container>
+					<div className="mx-auto max-w-4xl">
+						<div className="text-center">
+							<p className="text-sm font-semibold uppercase tracking-[0.18em] text-brand-primary">
+								Nuestra forma de acompañarte
+							</p>
+
+							<h2
+								id="filosofia-title"
+								className="mt-3 text-3xl font-bold tracking-tight text-brand-fg sm:text-4xl italic"
+							>
+								"Nuestro propósito no es vender, es informar."
+							</h2>
+
+							<p className="mx-auto mt-5 max-w-2xl text-base leading-7 text-brand-muted">
+								Queremos que tengas la información necesaria para conocer tus
+								opciones de vivienda y tomar una decisión con mayor claridad y
+								confianza.
+							</p>
+						</div>
+
+						<div className="mt-12 grid gap-6 md:grid-cols-3">
+							<Card className="h-full p-6">
+								<p className="text-sm font-semibold uppercase tracking-wider text-brand-primary">
+									Misión
+								</p>
+
+								<h3 className="mt-3 text-xl font-bold text-brand-fg">
+									Informar para decidir
+								</h3>
+
+								<p className="mt-4 text-sm leading-6 text-brand-muted">
+									Brindar información clara, honesta y útil sobre las opciones
+									de vivienda disponibles, acompañando a cada persona para que
+									pueda conocer sus alternativas, resolver sus dudas y tomar
+									decisiones informadas de acuerdo con sus necesidades y
+									posibilidades.
+								</p>
+							</Card>
+
+							<Card className="h-full p-6">
+								<p className="text-sm font-semibold uppercase tracking-wider text-brand-primary">
+									Visión
+								</p>
+
+								<h3 className="mt-3 text-xl font-bold text-brand-fg">
+									Ser un referente confiable
+								</h3>
+
+								<p className="mt-4 text-sm leading-6 text-brand-muted">
+									Ser un referente confiable en información y orientación sobre
+									vivienda, construyendo relaciones basadas en la transparencia,
+									el acompañamiento y la confianza antes, durante y después de
+									cada decisión.
+								</p>
+							</Card>
+
+							<Card className="h-full p-6">
+								<p className="text-sm font-semibold uppercase tracking-wider text-brand-primary">
+									Valores
+								</p>
+
+								<h3 className="mt-3 text-xl font-bold text-brand-fg">
+									Lo que nos representa
+								</h3>
+
+								<ul className="mt-4 space-y-3 text-sm leading-6 text-brand-muted">
+									<li>
+										<strong className="text-brand-fg">Transparencia:</strong>{" "}
+										Comunicamos información clara, sin ocultar detalles
+										importantes.
+									</li>
+
+									<li>
+										<strong className="text-brand-fg">Honestidad:</strong>{" "}
+										Orientamos con responsabilidad, buscando que cada persona
+										conozca realmente sus opciones.
+									</li>
+
+									<li>
+										<strong className="text-brand-fg">Información:</strong>{" "}
+										Creemos que una decisión importante comienza con información
+										comprensible y accesible.
+									</li>
+
+									<li>
+										<strong className="text-brand-fg">Compromiso:</strong>{" "}
+										Acompañamos a nuestros clientes durante el proceso y
+										atendemos sus dudas.
+									</li>
+
+									<li>
+										<strong className="text-brand-fg">Confianza:</strong>{" "}
+										Construimos relaciones duraderas mediante un trato
+										responsable y cercano.
+									</li>
+								</ul>
+							</Card>
+						</div>
+					</div>
+				</Container>
+			</section>
 		</>
 	);
 }
