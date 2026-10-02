@@ -195,7 +195,7 @@ export default function Contacto() {
 								id="filosofia-title"
 								className="mt-3 text-3xl font-bold tracking-tight text-brand-fg sm:text-4xl italic"
 							>
-								"Nuestro propósito no es vender, es informar."
+								"Nuestro propósito no es vender, es orientar e informar"
 							</h2>
 
 							<p className="mx-auto mt-5 max-w-2xl text-base leading-7 text-brand-muted">
