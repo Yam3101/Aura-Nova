@@ -10,7 +10,7 @@ export default function Logo({ variant = "color", className = "" }) {
 
 	return (
 		<Link to="/" className={`inline-flex items-center gap-2 ${className}`}>
-			<img src={src} alt="Logo" className="h-[55px] w-auto" />
+			<img src={src} alt="Logo" className="h-[100px] w-auto" />
 			<span className="sr-only">Inicio</span>
 		</Link>
 	);
