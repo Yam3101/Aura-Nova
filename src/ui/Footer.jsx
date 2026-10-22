@@ -16,7 +16,7 @@ export default function Footer() {
 		<footer className="mt-16 border-t border-slate-800 bg-slate-950 text-white">
 			<Container className="py-10">
 				<div className="grid gap-10 md:grid-cols-3">
-					<div className="space-y-[-20px]">
+					<div>
 						<Logo variant="white" />
 						<p className="text-sm text-white/70">
 							Conoce Playa del Carmen a través de nuestro portal virtual. Agende
